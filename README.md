@@ -71,8 +71,8 @@ python validate_cvat.py --xml ./annotations.xml --json report.json --anonymize a
 # visual check: montage of sample frames with boxes (needs opencv-python)
 python validate_cvat.py --xml ./annotations.xml --preview video.mp4
 
-# save annotated video in result_video.mp4
-python validate_cvat.py --video ./video.mp4 --xml ./annotations.xml --output result_video.mp4
+# save annotated video in output_validated.mp4
+python validate_cvat.py --video ./video.mp4 --xml ./annotations.xml --output output_validated.mp4
 ```
 
 ## Repository layout

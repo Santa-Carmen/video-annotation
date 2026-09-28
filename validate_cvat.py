@@ -458,7 +458,7 @@ def main():
                     help="warn if width/height changes more than this fraction between adjacent frames")
     ap.add_argument("--max-examples", type=int, default=5)
     ap.add_argument("--strict", action="store_true", help="exit with code 1 on warnings too")
-    ap.add_argument('--video', required=True, help='Шлях до вхідного відеофайлу (наприклад, input.mp4)')
+    ap.add_argument('--video', default='', required=False, help='Шлях до вхідного відеофайлу (наприклад, input.mp4)')
     ap.add_argument('--xml', required=True, help='Шлях до XML файлу анотацій з CVAT')
     ap.add_argument('--output', default='output_validated.mp4', help='Шлях для збереження вихідного відео')
     

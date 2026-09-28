@@ -63,13 +63,13 @@ Points the guidelines must settle (decide once, apply everywhere):
 pip install -r requirements.txt
 
 # statistics + checks
-python validate_cvat.py annotations.xml
+python validate_cvat.py --xml ./annotations.xml 
 
 # also save a JSON report and a copy without personal data (user name, email, job URLs)
-python validate_cvat.py annotations.xml --json report.json --anonymize annotations_public.xml
+python validate_cvat.py --xml ./annotations.xml --json report.json --anonymize annotations_public.xml
 
 # visual check: montage of sample frames with boxes (needs opencv-python)
-python validate_cvat.py annotations.xml --preview video.mp4
+python validate_cvat.py --xml ./annotations.xml --preview video.mp4
 
 # save annotated video in result_video.mp4
 python validate_cvat.py --video ./video.mp4 --xml ./annotations.xml --output result_video.mp4

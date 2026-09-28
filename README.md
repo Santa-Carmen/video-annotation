@@ -60,7 +60,7 @@ Points the guidelines must settle (decide once, apply everywhere):
 
 ```bash
 # download dependecies
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 # statistics + checks
 python validate_cvat.py --xml ./annotations.xml 
